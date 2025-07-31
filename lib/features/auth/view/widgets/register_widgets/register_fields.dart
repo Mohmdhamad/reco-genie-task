@@ -5,6 +5,7 @@ import '../../../model_view/register_cubit/register_cubit.dart';
 
 class RegisterFields extends StatelessWidget {
   RegisterFields({super.key});
+
   var emailController = TextEditingController();
   var passController = TextEditingController();
   var nameController = TextEditingController();

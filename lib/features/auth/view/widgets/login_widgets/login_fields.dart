@@ -4,7 +4,8 @@ import '../../../../../widgets/text_form_field.dart';
 import '../../../model_view/login_cubit/login_cubit.dart';
 
 class LoginFields extends StatelessWidget {
-   LoginFields({super.key});
+  LoginFields({super.key});
+
   static var emailController = TextEditingController();
   static var passwordController = TextEditingController();
 

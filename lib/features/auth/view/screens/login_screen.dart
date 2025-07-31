@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:reco_genie_task/features/auth/view/widgets/login_widgets/login_fields.dart';
 import '../../../../core/navigate_functions/navigate_functions.dart';
 import '../../../../widgets/default_floating_button.dart';
-import '../../../../widgets/text_form_field.dart';
 import '../../../menu/view/screens/menu_screen.dart';
 import '../../model_view/login_cubit/login_cubit.dart';
 import '../../model_view/login_cubit/login_states.dart';
@@ -15,17 +14,18 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
     return BlocProvider(
       create: (context) => LoginCubit(),
       child: BlocConsumer<LoginCubit, LoginStates>(
         listener: (context, state) {
           if (state is LoginSuccessState) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Login successful'),
-                  backgroundColor: Colors.green),
+              SnackBar(
+                content: Text('Login successful'),
+                backgroundColor: Colors.green,
+              ),
             );
+            navigateAndFinish(context, MenuScreen());
           } else if (state is LoginErrorState) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text(state.error), backgroundColor: Colors.red),
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       LoginTitle(),
-
+                      LoginFields(),
                       defaultFloatingButton(
                         text: "Login",
                         function: () {
@@ -53,7 +53,6 @@ class LoginScreen extends StatelessWidget {
                               email: LoginFields.emailController.text,
                               password: LoginFields.passwordController.text,
                             );
-                            navigateAndFinish(context, MenuScreen());
                           }
                         },
                       ),

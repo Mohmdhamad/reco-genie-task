@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../widgets/default_floating_button.dart';
-import '../../../../widgets/text_form_field.dart';
 import '../../model_view/register_cubit/register_cubit.dart';
 import '../../model_view/register_cubit/register_states.dart';
 import '../widgets/register_widgets/login_button.dart';
@@ -10,10 +9,6 @@ import '../widgets/register_widgets/register_title.dart';
 import '../widgets/register_widgets/verification_button.dart';
 
 class RegisterScreen extends StatelessWidget {
-  var emailController = TextEditingController();
-  var passController = TextEditingController();
-  var nameController = TextEditingController();
-  var phoneController = TextEditingController();
   RegisterFields fields = RegisterFields();
   var formKey = GlobalKey<FormState>();
 
