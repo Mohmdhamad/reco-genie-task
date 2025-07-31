@@ -1,0 +1,118 @@
+import '../model/menu_model.dart';
+
+class MenuData {
+  static List<MenuModel> menu = [
+    MenuModel(
+      id: 1,
+      name: "Classic Margherita Pizza",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/1.webp",
+      price: 300,
+      rating: 4.5,
+    ),
+    MenuModel(
+      id: 2,
+      name: "Vegetarian Stir-Fry",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/2.webp",
+      price: 250,
+      rating: 4.7,
+    ),
+    MenuModel(
+      id: 3,
+      name: "Chocolate Chip Cookies",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/3.webp",
+      price: 150,
+      rating: 4.9,
+    ),
+    MenuModel(
+      id: 4,
+      name: "Spaghetti Bolognese",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/4.webp",
+      price: 320,
+      rating: 4.8,
+    ),
+    MenuModel(
+      id: 5,
+      name: "Chicken Caesar Salad",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/5.webp",
+      price: 220,
+      rating: 4.6,
+    ),
+    MenuModel(
+      id: 6,
+      name: "Grilled Salmon",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/6.webp",
+      price: 400,
+      rating: 4.9,
+    ),
+    MenuModel(
+      id: 7,
+      name: "Beef Burger Deluxe",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/7.webp",
+      price: 280,
+      rating: 4.4,
+    ),
+    MenuModel(
+      id: 8,
+      name: "Tuna Pasta Salad",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/8.webp",
+      price: 210,
+      rating: 4.3,
+    ),
+    MenuModel(
+      id: 9,
+      name: "Avocado Toast",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/9.webp",
+      price: 180,
+      rating: 4.2,
+    ),
+    MenuModel(
+      id: 10,
+      name: "Mushroom Risotto",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/10.webp",
+      price: 330,
+      rating: 4.6,
+    ),
+    MenuModel(
+      id: 11,
+      name: "BBQ Chicken Wings",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/11.webp",
+      price: 260,
+      rating: 4.5,
+    ),
+    MenuModel(
+      id: 12,
+      name: "Shrimp Tacos",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/12.webp",
+      price: 310,
+      rating: 4.7,
+    ),
+    MenuModel(
+      id: 13,
+      name: "Pancakes with Syrup",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/13.webp",
+      price: 170,
+      rating: 4.8,
+    ),
+    MenuModel(
+      id: 14,
+      name: "Loaded Nachos",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/14.webp",
+      price: 240,
+      rating: 4.4,
+    ),
+    MenuModel(
+      id: 15,
+      name: "Eggplant Parmesan",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/15.webp",
+      price: 290,
+      rating: 4.5,
+    ),
+    MenuModel(
+      id: 16,
+      name: "Falafel Wrap",
+      imageUrl: "https://cdn.dummyjson.com/recipe-images/16.webp",
+      price: 200,
+      rating: 4.6,
+    ),
+  ];
+}
